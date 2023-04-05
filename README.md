@@ -13,27 +13,29 @@ chatgpt-research/
 ├── lab-questions/
 │   └── chat.md
 └── programming/
-    ├── general/
-    │   ├── grpc-parcing/
-    │   │   └── chat.md
-    │   └── pattern-sourcing/
-    │       └── chat.md
-    ├── javascript/
-    │   ├── assist-with-react-app/
-    │   │   └── chat.md
-    │   ├── customizing-chart/
-    │   │   └── chat.md
-    │   └── scss-component-selector/
-    │       └── chat.md
-    └── python/
-        ├── aiogoogle-wrong-auth-advicing/
-        │   └── chat.md
-        ├── google-api/
-        │   └── chat.md
-        ├── point-aggregation/
-        │   └── chat.md
-        └── project-structure-and-webhooks/
-            └── chat.md
+│   ├── general/
+│   │   ├── grpc-parcing/
+│   │   │   └── chat.md
+│   │   └── pattern-sourcing/
+│   │       └── chat.md
+│   ├── javascript/
+│   │   ├── assist-with-react-app/
+│   │   │   └── chat.md
+│   │   ├── customizing-chart/
+│   │   │   └── chat.md
+│   │   └── scss-component-selector/
+│   │       └── chat.md
+│   └── python/
+│       ├── aiogoogle-wrong-auth-advicing/
+│       │   └── chat.md
+│       ├── google-api/
+│       │   └── chat.md
+│       ├── point-aggregation/
+│       │   └── chat.md
+│       └── project-structure-and-webhooks/
+│           └── chat.md
+├── README.md
+└── formatter.py
 ```
 
 ---
