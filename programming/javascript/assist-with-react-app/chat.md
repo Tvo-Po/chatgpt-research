@@ -15,8 +15,6 @@ Can i pass react component in onClick function?
 Yes, you can pass a React component as a parameter to an <code>onClick</code> function. However, it is not a common practice to pass a component directly to an <code>onClick</code> function. Usually, <code>onClick</code> functions are used to handle user events such as clicks on buttons, links, or other interactive elements.
 If you want to pass a component as a parameter to an <code>onClick</code> function, you can create a reference to the component and then pass that reference as a parameter. Here is an example:
 ```jsx
-jsx
-Copy code
 import React, { useRef } from 'react';
 
 function App() {
@@ -50,8 +48,6 @@ so can i create ref on component itself?
 **ChatGPT:**
 Yes, you can create a <code>ref</code> for a component itself using the <code>React.createRef()</code> method. Here is an example:
 ```jsx
-jsx
-Copy code
 import React, { Component } from 'react';
 
 class MyComponent extends Component {
@@ -85,8 +81,6 @@ how can i make this with functional component
 **ChatGPT:**
 You can use the <code>useRef</code> hook to create a ref for a functional component. Here's an example:
 ```jsx
-jsx
-Copy code
 import React, { useRef } from 'react';
 
 function MyComponent() {
@@ -115,8 +109,6 @@ write it on typescript
 **ChatGPT:**
 Sure, here is an example of the functional component with TypeScript:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -147,8 +139,6 @@ but you make reference on html element, when i need reference on react component
 **ChatGPT:**
 To create a <code>ref</code> for a React component, you can use the <code>React.RefObject</code> type and the <code>React.useRef()</code> hook. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 interface MyComponentProps {
@@ -185,8 +175,6 @@ can i assign that ref directly to MyComponent instead of linking it with inner c
 **ChatGPT:**
 Yes, you can assign the <code>ref</code> directly to the <code>MyComponent</code> component itself using the <code>React.forwardRef()</code> function. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { forwardRef, useImperativeHandle } from 'react';
 
 export interface MyComponentRef {
@@ -230,8 +218,6 @@ i only need to use reference inside component, where i declare this reference
 **ChatGPT:**
 If you only need to use the reference inside the component and don't need to pass it to other components, you can declare the reference variable inside the component function using the <code>React.useRef()</code> hook. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 interface MyComponentProps {
@@ -270,8 +256,6 @@ how to take element out of the document flow and then return it back to the plac
 To take an element out of the document flow, you can set its <code>position</code> property to <code>"absolute"</code> or <code>"fixed"</code>. This will remove the element from the normal document flow and position it according to its nearest positioned ancestor.
 To return the element to its original position without causing additional offsets, you can save the element's original position before changing its position property and then set its position back to its original value. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -320,8 +304,6 @@ hot to define function parameters outside using typescript?
 **ChatGPT:**
 You can define function parameters outside of the function signature using TypeScript by creating an interface or type that describes the parameter object and then passing that object as an argument to the function. Here's an example:
 ```ts
-ts
-Copy code
 interface MyParams {
   param1: number;
   param2: string;
@@ -350,8 +332,6 @@ but what should i do if when i take an element out of document flow and move it 
 **ChatGPT:**
 If you've taken an element out of the document flow and moved it to another place in the DOM, you can still return it to its original position by saving a reference to its original parent and position before moving it, and then using that reference to return it to its original position. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -407,8 +387,6 @@ but i need to my element has position relative at the end, what can i do?
 **ChatGPT:**
 If you need your element to have <code>position: relative</code> when it's returned to the document flow, you can modify the example I provided earlier to set the <code>position</code> style of the element to <code>relative</code> instead of <code>static</code> when it's returned to its original position. Here's the modified example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -463,8 +441,6 @@ but when i do this element jumps to the bottom. I also use .animate to move elem
 If you're using <code>.animate</code> to move the element, that could be causing the issue with the element jumping to the bottom. <code>.animate</code> sets the element's <code>position</code> style to <code>absolute</code> while the animation is running, which could be causing the jump.
 To prevent the jump, you can set the <code>position</code> style of the element to <code>fixed</code> before starting the animation, then reset it to <code>relative</code> when the animation is complete. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -530,8 +506,6 @@ but i have two staged animation. on first click element moving out of the flow (
 **ChatGPT:**
 In that case, you can modify the previous code to keep track of the element's state (in-flow or out-of-flow) and its original position. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef, useState } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -606,8 +580,6 @@ when i set element position to relative at the end it jumps to the bottom. I ass
 When an element's position is set to <code>relative</code>, it remains in the normal flow of the document, but it's offset from its original position based on its <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> properties.
 To reset these offsets, you can set the element's <code>top</code>, <code>bottom</code>, <code>left</code>, and <code>right</code> properties to <code>auto</code>. Here's an example:
 ```tsx
-tsx
-Copy code
 import React, { useRef } from 'react';
 
 const MyComponent: React.FC = () => {
@@ -648,3 +620,4 @@ export default MyComponent;
 In this example, we're using <code>element.style.top</code>, <code>element.style.bottom</code>, <code>element.style.left</code>, and <code>element.style.right</code> to set the element's positioning properties.
 When the button is clicked, we check whether the element is currently in normal flow or not. If it's in normal flow, we reset the element's position by setting its <code>position</code> to <code>static</code> and its offsets to <code>auto</code>. If it's not in normal flow, we take it out of normal flow by setting its <code>position</code> to <code>relative</code> and its offsets to negative values based on its current position.
 I hope this helps!
+
