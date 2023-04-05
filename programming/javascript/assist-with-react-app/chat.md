@@ -6,7 +6,7 @@ Chat assitst with react app developing.
 ---
 
 
-**User:**
+**Me:**
 Can i pass react component in onClick function? 
 
 ---
@@ -42,7 +42,7 @@ In this example, we use the <code>useRef</code> hook to create a reference to th
 
 ---
 
-**User:**
+**Me:**
 so can i create ref on component itself?
 
 ---
@@ -77,7 +77,7 @@ In this example, we create a <code>ref</code> called <code>myRef</code> using th
 
 ---
 
-**User:**
+**Me:**
 how can i make this with functional component
 
 ---
@@ -107,7 +107,7 @@ In this example, we use the <code>useRef</code> hook to create a <code>ref</code
 
 ---
 
-**User:**
+**Me:**
 write it on typescript
 
 ---
@@ -139,7 +139,7 @@ In this example, we define <code>MyComponent</code> as a function component usin
 
 ---
 
-**User:**
+**Me:**
 but you make reference on html element, when i need reference on react component
 
 ---
@@ -177,7 +177,7 @@ We then attach the <code>ref</code> to a <code>p</code> element using the <code>
 
 ---
 
-**User:**
+**Me:**
 can i assign that ref directly to MyComponent instead of linking it with inner component element?
 
 ---
@@ -222,7 +222,7 @@ Finally, we render the <code>MyComponent</code> component with its content, incl
 
 ---
 
-**User:**
+**Me:**
 i only need to use reference inside component, where i declare this reference 
 
 ---
@@ -261,7 +261,7 @@ We then create an <code>onClick</code> event handler for a button within the <co
 
 ---
 
-**User:**
+**Me:**
 how to take element out of the document flow and then return it back to the place without additional offsets?
 
 ---
@@ -312,7 +312,7 @@ When the button is clicked, the <code>handleClick</code> function is called, tog
 
 ---
 
-**User:**
+**Me:**
 hot to define function parameters outside using typescript?
 
 ---
@@ -342,7 +342,7 @@ This approach can be useful when you have a large number of parameters or when y
 
 ---
 
-**User:**
+**Me:**
 but what should i do if when i take an element out of document flow and move it in another place? how should i turn it back?
 
 ---
@@ -399,7 +399,7 @@ Note that in this example, we assume that the saved parent is a <code>div</code>
 
 ---
 
-**User:**
+**Me:**
 but i need to my element has position relative at the end, what can i do?
 
 ---
@@ -454,7 +454,7 @@ Note that you'll need to adjust any offsets or positioning styles that you've ap
 
 ---
 
-**User:**
+**Me:**
 but when i do this element jumps to the bottom. I also use .animate to move element, maybe thats the case?
 
 ---
@@ -522,7 +522,7 @@ In this example, we've set the <code>position</code> style of the element to <co
 
 ---
 
-**User:**
+**Me:**
 but i have two staged animation. on first click element moving out of the flow (with animation) and on second its returning back (also with animation)
 
 ---
@@ -597,7 +597,7 @@ I hope this helps!
 
 ---
 
-**User:**
+**Me:**
 when i set element position to relative at the end it jumps to the bottom. I assume that it remain positioning properties relative to root, not parent element. Is there a way to reset this offsets?
 
 ---
