@@ -6,7 +6,7 @@ google-api usage help.
 ---
 
 
-**User:**
+**Me:**
 write python code that watch for changes in google spreadsheet document
 
 ---
@@ -121,7 +121,7 @@ try:
 
 ---
 
-**User:**
+**Me:**
 so you recommend me to use webhook for listening changes?
 
 ---
@@ -131,7 +131,7 @@ Yes, using a webhook is a good way to receive real-time notifications when chang
 
 ---
 
-**User:**
+**Me:**
 but what should i do if i plan watch changes locally?
 
 ---
@@ -201,7 +201,7 @@ This code will periodically check for changes in a specified range of the spread
 
 ---
 
-**User:**
+**Me:**
 is there any tools for using webhooks locally?
 
 ---
@@ -213,7 +213,7 @@ These tools are easy to set up and use and can be helpful for testing and debugg
 
 ---
 
-**User:**
+**Me:**
 previosly you write me how to watch changes with webhook. But also there are several other requests in that code block. What is their purpose?
 
 ---
@@ -225,7 +225,7 @@ Together, these requests work together to set up a webhook subscription, authent
 
 ---
 
-**User:**
+**Me:**
 Can you duplicate that code for me?
 
 ---
@@ -328,7 +328,7 @@ This code sets up a webhook subscription for the specified Google Sheets documen
 
 ---
 
-**User:**
+**Me:**
 do you know what `poetry build` command do?
 
 ---
@@ -341,7 +341,7 @@ By default, <code>poetry build</code> creates a source distribution and a binary
 
 ---
 
-**User:**
+**Me:**
 option --target does not exist for this command
 
 ---
@@ -359,7 +359,7 @@ You can also use the <code>--format</code> option to build other types of distri
 
 ---
 
-**User:**
+**Me:**
 how to use Changes: watch in python google api?
 
 ---
@@ -408,7 +408,7 @@ That's it! With these steps, you should be able to set up a webhook to watch cha
 
 ---
 
-**User:**
+**Me:**
 for some reason changes are not being sent to my ngrok webhook
 
 ---
@@ -420,7 +420,7 @@ By checking these potential issues, you should be able to identify why changes a
 
 ---
 
-**User:**
+**Me:**
 Endpoint and ngrok work fine, but how can i see if anything goes wrong by `watch()` response? 
 
 ---
@@ -451,7 +451,7 @@ By catching and handling the <code>HttpError</code> exception, you can ensure th
 
 ---
 
-**User:**
+**Me:**
 I receive no errors from watch() method
 
 ---
@@ -463,7 +463,7 @@ By checking these potential issues, you should be able to identify why changes a
 
 ---
 
-**User:**
+**Me:**
 can i get sheet, where changes were made, from changes: watch google api webhook?
 
 ---
@@ -514,7 +514,7 @@ In this example, the <code>get()</code> method is used to retrieve the sheet dat
 
 ---
 
-**User:**
+**Me:**
 you are wrong i can only use drive api for notification not spreadsheets api
 
 ---
@@ -569,7 +569,7 @@ Once the notification channel is set up, any changes made to the specified file 
 
 ---
 
-**User:**
+**Me:**
 what data i will receive on my webhook?
 
 ---
@@ -609,7 +609,7 @@ In this example, the <code>changes</code> array contains information about the c
 
 ---
 
-**User:**
+**Me:**
 I do not receive anything in body, all info i have placed in headers
 
 ---
@@ -650,7 +650,7 @@ This code creates a Flask app that listens for POST requests to the root URL (<c
 
 ---
 
-**User:**
+**Me:**
 how can i get sheet, where changes were made, using that information 
 
 ---
@@ -689,7 +689,7 @@ This code uses the <code>google-auth</code> library to load the user's credentia
 
 ---
 
-**User:**
+**Me:**
 you only show, how to get spreadsheet, what about specific sheet?
 
 ---
@@ -730,7 +730,7 @@ This code modifies the <code>sheets_service.spreadsheets().get</code> request to
 
 ---
 
-**User:**
+**Me:**
 you simply take first sheet nor that where changes were made
 
 ---
@@ -770,7 +770,7 @@ This code modifies the <code>sheets_service.spreadsheets().values().get</code> r
 
 ---
 
-**User:**
+**Me:**
 is there a to remove google drive api Changes: watch webhook?
 
 ---
@@ -809,7 +809,7 @@ This code sends an HTTP POST request to the <code>channels().stop</code> method 
 
 ---
 
-**User:**
+**Me:**
 can i receive info about active channels?
 
 ---
@@ -844,7 +844,7 @@ This code sends an HTTP GET request to the <code>channels().list</code> method o
 
 ---
 
-**User:**
+**Me:**
 how can i get all data from sheet when i dont know range using google api in python
 
 ---
