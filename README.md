@@ -34,6 +34,8 @@ chatgpt-research/
 │       │   └── chat.md
 │       └── project-structure-and-webhooks/
 │           └── chat.md
+├── resume/
+│   └── chat.md
 ├── README.md
 └── formatter.py
 ```
